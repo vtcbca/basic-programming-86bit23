@@ -1,0 +1,84 @@
+solution:1
+def factorial_for_loop(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+n = 5  # Example input
+print(factorial_for_loop(n))  # Using for loop
+
+solution:2
+def is_prime_for_loop(n):
+    if n <= 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+n = 26  # Example number
+
+print(is_prime_for_loop(n))      # Using simple for loop
+
+soluton:3
+def fibonacci_for_loop_terms(n):
+    fib_sequence = []
+    a, b = 0, 1
+    for _ in range(n):
+        fib_sequence.append(a)
+        a, b = b, a + b
+    return fib_sequence
+n = 10  # Number of terms
+print(fibonacci_for_loop_terms(n))          # Using for loop
+
+solution:4
+def reverse_string_slicing(s):
+    return s[::-1]
+s = "Hello, World!"  # Example string
+print(reverse_string_slicing(s))           # Using slicing
+
+solution:5
+def is_palindrome_slicing(s):
+    return s == s[::-1]
+s = "madam"  # Example string
+
+print(is_palindrome_slicing(s))        # Using slicing
+
+solution:6
+def print_pattern_for_loop(n):
+    for i in range(1, n + 1):
+        print("* " * i)
+n = 4  # Number of rows
+print_pattern_for_loop(n)          # Using for loop
+
+solution:7
+def print_triangle_for_loop(n):
+    for i in range(1, n + 1):
+        # Print spaces for alignment
+        print(" " * (n - i), end="")
+        # Print numbers
+        for j in range(1, 2 * i):
+            print(j, end=" ")
+        print()
+n = 3  # Number of rows
+print_triangle_for_loop(n)            # Using for loop
+
+solution:8
+def print_alphabet_pattern_for_loop(n):
+    for i in range(1, n + 1):
+        # Print leading spaces
+        print(" " * (n - i), end="")
+        
+        # Print the first part (increasing alphabet)
+        for j in range(1, i + 1):
+            print(chr(64 + j), end=" ")
+
+        # Print the second part (decreasing alphabet)
+        for j in range(i - 1, 0, -1):
+            print(chr(64 + j), end=" ")
+
+        print()
+n = 3  # Number of rows
+print_alphabet_pattern_for_loop(n)             # Using for loop
+
+
+
