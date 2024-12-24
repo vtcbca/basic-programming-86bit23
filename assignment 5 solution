@@ -1,7 +1,0 @@
-def is_palindrome_slicing(s):
-    s = s.lower().replace(" ", "")  # Remove spaces and convert to lowercase
-    return s == s[::-1]
-
-# Input
-input_string = input("Enter a string: ")
-print("Is palindrome?", is_palindrome_slicing(input_string))
