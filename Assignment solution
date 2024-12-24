@@ -44,7 +44,15 @@ s = "madam"  # Example string
 print(is_palindrome_slicing(s))        # Using slicing
 
 solution:6
+def print_pattern_for_loop(n):
+    for i in range(1, n + 1):
+        print("* " * i)
+n = 4  # Number of rows
+print_pattern_for_loop(n)          # Using for loop
 
+solution:7
+
+solution:8
 
 
 
