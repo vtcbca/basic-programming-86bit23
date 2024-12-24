@@ -20,5 +20,17 @@ n = 26  # Example number
 print(is_prime_for_loop(n))      # Using simple for loop
 
 soluton:3
+def fibonacci_for_loop_terms(n):
+    fib_sequence = []
+    a, b = 0, 1
+    for _ in range(n):
+        fib_sequence.append(a)
+        a, b = b, a + b
+    return fib_sequence
+n = 10  # Number of terms
+print(fibonacci_for_loop_terms(n))          # Using for loop
+
+solution:4
+
 
 
