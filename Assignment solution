@@ -63,6 +63,22 @@ n = 3  # Number of rows
 print_triangle_for_loop(n)            # Using for loop
 
 solution:8
+def print_alphabet_pattern_for_loop(n):
+    for i in range(1, n + 1):
+        # Print leading spaces
+        print(" " * (n - i), end="")
+        
+        # Print the first part (increasing alphabet)
+        for j in range(1, i + 1):
+            print(chr(64 + j), end=" ")
+
+        # Print the second part (decreasing alphabet)
+        for j in range(i - 1, 0, -1):
+            print(chr(64 + j), end=" ")
+
+        print()
+n = 3  # Number of rows
+print_alphabet_pattern_for_loop(n)             # Using for loop
 
 
 
