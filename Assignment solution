@@ -31,6 +31,13 @@ n = 10  # Number of terms
 print(fibonacci_for_loop_terms(n))          # Using for loop
 
 solution:4
+def reverse_string_slicing(s):
+    return s[::-1]
+s = "Hello, World!"  # Example string
+print(reverse_string_slicing(s))           # Using slicing
+
+solution:5
+
 
 
 
