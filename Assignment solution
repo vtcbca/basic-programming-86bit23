@@ -7,3 +7,18 @@ def factorial_for_loop(n):
 n = 5  # Example input
 print(factorial_for_loop(n))  # Using for loop
 
+solution:2
+def is_prime_for_loop(n):
+    if n <= 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+n = 26  # Example number
+
+print(is_prime_for_loop(n))      # Using simple for loop
+
+soluton:3
+
+
