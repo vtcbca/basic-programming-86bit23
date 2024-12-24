@@ -51,6 +51,16 @@ n = 4  # Number of rows
 print_pattern_for_loop(n)          # Using for loop
 
 solution:7
+def print_triangle_for_loop(n):
+    for i in range(1, n + 1):
+        # Print spaces for alignment
+        print(" " * (n - i), end="")
+        # Print numbers
+        for j in range(1, 2 * i):
+            print(j, end=" ")
+        print()
+n = 3  # Number of rows
+print_triangle_for_loop(n)            # Using for loop
 
 solution:8
 
