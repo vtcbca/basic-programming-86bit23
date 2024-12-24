@@ -37,6 +37,13 @@ s = "Hello, World!"  # Example string
 print(reverse_string_slicing(s))           # Using slicing
 
 solution:5
+def is_palindrome_slicing(s):
+    return s == s[::-1]
+s = "madam"  # Example string
+
+print(is_palindrome_slicing(s))        # Using slicing
+
+solution:6
 
 
 
